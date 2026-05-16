@@ -13,26 +13,29 @@ services:
     buildCommand: pip install -r backend/requirements.txt
     startCommand: uvicorn backend.app:app --host 0.0.0.0 --port $PORT
     healthCheckPath: /health
+
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.9
+
       - key: API_PORT
         value: 10000
+
       - key: POSTGRES_URL
         fromDatabase:
           name: preventive-health-db
           property: connectionString
+
       - key: JWT_SECRET_KEY
         generateValue: true
+
       - key: BACKEND_CORS_ORIGINS
         value: https://preventive-health-frontend.onrender.com
+
       - key: AI_PROVIDER
         value: openai
+
       - key: OPENAI_API_KEY
-        sync: false
-      - key: GEMINI_API_KEY
-        sync: false
-      - key: XAI_API_KEY
         sync: false
 
   - type: web
@@ -41,10 +44,17 @@ services:
     plan: free
     region: oregon
     rootDir: frontend
+
     buildCommand: npm ci && npm run build
+
     startCommand: npx next start -p $PORT
+
     envVars:
       - key: NODE_VERSION
         value: 20.18.0
+
+      - key: NEXT_PUBLIC_API_URL
+        value: https://preventive-health-api.onrender.com
+
       - key: NEXT_PUBLIC_API_BASE_URL
         value: https://preventive-health-api.onrender.com
