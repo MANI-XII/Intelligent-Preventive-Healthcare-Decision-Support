@@ -2,7 +2,8 @@ import axios from "axios";
 import { getStoredToken } from "./auth";
 
 const baseURL =
-  process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8000";
+  process.env.NEXT_PUBLIC_API_BASE_URL ||
+  "https://preventive-health-api.onrender.com";
 
 export const api = axios.create({
   baseURL,
@@ -13,6 +14,7 @@ export const APP_DATA_CHANGED_EVENT = "app-data-changed";
 
 function emitAppDataChanged(scope: string) {
   if (typeof window === "undefined") return;
+
   window.dispatchEvent(
     new CustomEvent(APP_DATA_CHANGED_EVENT, {
       detail: { scope, at: Date.now() },
@@ -20,34 +22,34 @@ function emitAppDataChanged(scope: string) {
   );
 }
 
-// Store abort controllers for each request type
 const abortControllers = new Map<string, AbortController>();
 
 api.interceptors.request.use((config) => {
   const token = getStoredToken();
+
   if (token) {
     config.headers = config.headers || {};
     config.headers.Authorization = `Bearer ${token}`;
   }
+
   return config;
 });
 
-// Helper to create unique request key
 function createRequestKey(method: string, url: string): string {
   return `${method}:${url}`;
 }
 
-// Cancel all pending requests
 export function cancelAllRequests() {
   abortControllers.forEach((controller) => {
     controller.abort();
   });
+
   abortControllers.clear();
 }
 
-// Cancel specific request by key
 export function cancelRequest(key: string) {
   const controller = abortControllers.get(key);
+
   if (controller) {
     controller.abort();
     abortControllers.delete(key);
@@ -184,8 +186,12 @@ export async function getTaskRescheduleOptions(taskId: number) {
 }
 
 export async function rescheduleTaskToDate(taskId: number, targetDate: string) {
-  const res = await api.post(`/tasks/${taskId}/reschedule`, { target_date: targetDate });
+  const res = await api.post(`/tasks/${taskId}/reschedule`, {
+    target_date: targetDate,
+  });
+
   emitAppDataChanged("tasks");
+
   return res.data;
 }
 
@@ -217,14 +223,20 @@ export async function getPredictionTrend() {
 
 export async function downloadReport(predictionId?: number) {
   const token = getStoredToken();
-  const url = predictionId ? `${baseURL}/report?prediction_id=${predictionId}` : `${baseURL}/report`;
+
+  const url = predictionId
+    ? `${baseURL}/report?prediction_id=${predictionId}`
+    : `${baseURL}/report`;
+
   const res = await fetch(url, {
     headers: token ? { Authorization: `Bearer ${token}` } : {},
   });
+
   if (!res.ok) {
     const text = await res.text();
     throw new Error(text || "Failed to download report");
   }
+
   return res.blob();
 }
 
@@ -248,17 +260,22 @@ export async function getHealthInsight() {
   return res.data;
 }
 
-export async function generateMonitoringReport(currentRecord: any, daysBack: number = 30) {
+export async function generateMonitoringReport(
+  currentRecord: any,
+  daysBack: number = 30
+) {
   const res = await api.post("/monitor/report", currentRecord, {
-    params: { days_back: daysBack }
+    params: { days_back: daysBack },
   });
+
   return res.data;
 }
 
 export async function getHealthTrends(daysBack: number = 30) {
   const res = await api.get("/monitor/trends", {
-    params: { days_back: daysBack }
+    params: { days_back: daysBack },
   });
+
   return res.data;
 }
 
