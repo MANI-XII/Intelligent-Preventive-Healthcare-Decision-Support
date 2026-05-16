@@ -34,10 +34,12 @@ def create_app() -> FastAPI:
         version="1.0.0",
     )
 
-    origins = [o.strip() for o in settings.back_end_cors_origins.split(",") if o.strip()]
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=origins or ["http://localhost:3000"],
+        allow_origins=[
+            "http://localhost:3000",
+            "https://preventive-health-frontend.onrender.com",
+        ],
         allow_credentials=True,
         allow_methods=["*"],
         allow_headers=["*"],
@@ -76,5 +78,9 @@ def create_app() -> FastAPI:
 app = create_app()
 
 if __name__ == "__main__":
-    uvicorn.run("backend.app:app", host="0.0.0.0", port=settings.api_port, reload=True)
-
+    uvicorn.run(
+        "backend.app:app",
+        host="0.0.0.0",
+        port=settings.api_port,
+        reload=True,
+    )
