@@ -1,0 +1,10 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/dashboard/alerts": "pages/dashboard/alerts.js",
+  "/dashboard/tasks": "pages/dashboard/tasks.js",
+  "/": "pages/index.js",
+  "/dashboard/gamification": "pages/dashboard/gamification.js",
+  "/dashboard/goals": "pages/dashboard/goals.js"
+}

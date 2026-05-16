@@ -1,0 +1,51 @@
+{
+  "common": {
+    "save": "सहेजें",
+    "cancel": "रद्द करें",
+    "edit": "संपादित करें",
+    "delete": "मिटाएं",
+    "loading": "लोड हो रहा है...",
+    "error": "त्रुटि",
+    "success": "सफलता"
+  },
+  "nav": {
+    "dashboard": "डैशबोर्ड",
+    "predict": "पूर्वानुमान",
+    "profile": "प्रोफ़ाइल",
+    "alerts": "अलर्ट",
+    "goals": "लक्ष्य",
+    "gamification": "गेमिफिकेशन",
+    "behavior": "व्यवहार",
+    "chat": "चैट",
+    "tasks": "कार्य",
+    "simulate": "सिमुलेट",
+    "monitor": "मॉनिटर"
+  },
+  "auth": {
+    "login": "लॉग इन",
+    "signup": "साइन अप",
+    "logout": "लॉग आउट",
+    "email": "ईमेल",
+    "password": "पासवर्ड",
+    "fullName": "पूरा नाम"
+  },
+  "predict": {
+    "title": "रोग पूर्वानुमान",
+    "diabetes": "मधुमेह",
+    "heartDisease": "हृदय रोग",
+    "hypertension": "उच्च रक्तचाप",
+    "obesity": "मोटापा",
+    "risk": "जोखिम स्तर",
+    "low": "कम",
+    "medium": "मध्यम",
+    "high": "उच्च",
+    "recommendations": "सिफारिशें"
+  },
+  "alerts": {
+    "title": "स्वास्थ्य अलर्ट",
+    "acknowledge": "स्वीकार करें",
+    "critical": "गंभीर",
+    "warning": "चेतावनी",
+    "info": "जानकारी"
+  }
+}

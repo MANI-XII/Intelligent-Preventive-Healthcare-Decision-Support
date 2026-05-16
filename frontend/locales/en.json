@@ -1,0 +1,51 @@
+{
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "edit": "Edit",
+    "delete": "Delete",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "predict": "Predict",
+    "profile": "Profile",
+    "alerts": "Alerts",
+    "goals": "Goals",
+    "gamification": "Gamification",
+    "behavior": "Behavior",
+    "chat": "Chat",
+    "tasks": "Tasks",
+    "simulate": "Simulate",
+    "monitor": "Monitor"
+  },
+  "auth": {
+    "login": "Login",
+    "signup": "Sign Up",
+    "logout": "Logout",
+    "email": "Email",
+    "password": "Password",
+    "fullName": "Full Name"
+  },
+  "predict": {
+    "title": "Disease Prediction",
+    "diabetes": "Diabetes",
+    "heartDisease": "Heart Disease",
+    "hypertension": "Hypertension",
+    "obesity": "Obesity",
+    "risk": "Risk Level",
+    "low": "Low",
+    "medium": "Medium",
+    "high": "High",
+    "recommendations": "Recommendations"
+  },
+  "alerts": {
+    "title": "Health Alerts",
+    "acknowledge": "Acknowledge",
+    "critical": "Critical",
+    "warning": "Warning",
+    "info": "Info"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "feature_names_out": [
+    "num__age",
+    "num__hypertension",
+    "num__heart_disease",
+    "num__bmi",
+    "num__HbA1c_level",
+    "num__blood_glucose_level",
+    "num__sleep_hours",
+    "cat__gender_Female",
+    "cat__gender_Male",
+    "cat__gender_Other",
+    "cat__smoking_history_current",
+    "cat__smoking_history_ever",
+    "cat__smoking_history_former",
+    "cat__smoking_history_never",
+    "cat__smoking_history_not current",
+    "cat__activity_level_low",
+    "cat__activity_level_moderate"
+  ],
+  "numeric_features": [
+    "age",
+    "hypertension",
+    "heart_disease",
+    "bmi",
+    "HbA1c_level",
+    "blood_glucose_level",
+    "sleep_hours"
+  ],
+  "categorical_features": [
+    "gender",
+    "smoking_history",
+    "activity_level"
+  ],
+  "metrics": {
+    "accuracy": 0.9723,
+    "roc_auc": 0.9662472999035681
+  }
+}

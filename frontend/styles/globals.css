@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+@layer base {
+  /* Make sure text inherits a correct color in dark mode everywhere. */
+  .dark {
+    @apply text-slate-100;
+  }
+
+  .dark label {
+    @apply text-slate-200;
+  }
+
+  .dark input,
+  .dark select,
+  .dark textarea {
+    @apply text-slate-100;
+  }
+
+  .dark input::placeholder,
+  .dark select::placeholder,
+  .dark textarea::placeholder {
+    @apply text-slate-500;
+  }
+}
+

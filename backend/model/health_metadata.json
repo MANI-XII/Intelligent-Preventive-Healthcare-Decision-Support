@@ -1,0 +1,52 @@
+{
+  "feature_names": [
+    "gender",
+    "age",
+    "hypertension",
+    "heart_disease",
+    "smoking_history",
+    "bmi",
+    "HbA1c_level",
+    "blood_glucose_level",
+    "activity_level",
+    "sleep_hours"
+  ],
+  "numeric_features": [
+    "age",
+    "hypertension",
+    "heart_disease",
+    "bmi",
+    "HbA1c_level",
+    "blood_glucose_level",
+    "sleep_hours"
+  ],
+  "categorical_features": [
+    "gender",
+    "smoking_history",
+    "activity_level"
+  ],
+  "models": {
+    "diabetes": {
+      "model_path": "diabetes_model.joblib",
+      "metrics": {
+        "accuracy": 0.9723,
+        "roc_auc": 0.9692511250401801
+      }
+    },
+    "heart_disease": {
+      "model_path": "heart_disease_model.joblib",
+      "metrics": {
+        "accuracy": 1.0,
+        "roc_auc": 1.0
+      }
+    },
+    "hypertension": {
+      "model_path": "hypertension_model.joblib",
+      "metrics": {
+        "accuracy": 1.0,
+        "roc_auc": 1.0
+      }
+    }
+  },
+  "preprocessor_path": "health_preprocessor.joblib"
+}

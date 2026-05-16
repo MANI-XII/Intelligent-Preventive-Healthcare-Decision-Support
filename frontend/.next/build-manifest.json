@@ -1,0 +1,125 @@
+{
+  "polyfillFiles": [
+    "static/chunks/polyfills-42372ed130431b0a.js"
+  ],
+  "devFiles": [],
+  "ampDevFiles": [],
+  "lowPriorityFiles": [
+    "static/Y_ZA58DkOVWZfUzPiqzqO/_buildManifest.js",
+    "static/Y_ZA58DkOVWZfUzPiqzqO/_ssgManifest.js"
+  ],
+  "rootMainFiles": [],
+  "pages": {
+    "/": [
+      "static/chunks/webpack-38cee4c0e358b1a3.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-f374284f798862e4.js",
+      "static/chunks/pages/index-732e184fcb8df3cc.js"
+    ],
+    "/_app": [
+      "static/chunks/webpack-38cee4c0e358b1a3.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-f374284f798862e4.js",
+      "static/css/ecf725b1f99945a1.css",
+      "static/chunks/pages/_app-bfa16d603080d658.js"
+    ],
+    "/_error": [
+      "static/chunks/webpack-38cee4c0e358b1a3.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-f374284f798862e4.js",
+      "static/chunks/pages/_error-7a92967bea80186d.js"
+    ],
+    "/dashboard": [
+      "static/chunks/webpack-38cee4c0e358b1a3.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-f374284f798862e4.js",
+      "static/chunks/pages/dashboard-5ecf154388c9e402.js"
+    ],
+    "/dashboard/alerts": [
+      "static/chunks/webpack-38cee4c0e358b1a3.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-f374284f798862e4.js",
+      "static/chunks/pages/dashboard/alerts-1700c326c059b1c8.js"
+    ],
+    "/dashboard/behavior": [
+      "static/chunks/webpack-38cee4c0e358b1a3.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-f374284f798862e4.js",
+      "static/chunks/pages/dashboard/behavior-3343c2f1fcae846a.js"
+    ],
+    "/dashboard/chat": [
+      "static/chunks/webpack-38cee4c0e358b1a3.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-f374284f798862e4.js",
+      "static/chunks/pages/dashboard/chat-f6b914e82db33f5e.js"
+    ],
+    "/dashboard/gamification": [
+      "static/chunks/webpack-38cee4c0e358b1a3.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-f374284f798862e4.js",
+      "static/chunks/pages/dashboard/gamification-c13739a1b5ec37d8.js"
+    ],
+    "/dashboard/goals": [
+      "static/chunks/webpack-38cee4c0e358b1a3.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-f374284f798862e4.js",
+      "static/chunks/pages/dashboard/goals-33d86765a70335c4.js"
+    ],
+    "/dashboard/insights": [
+      "static/chunks/webpack-38cee4c0e358b1a3.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-f374284f798862e4.js",
+      "static/chunks/pages/dashboard/insights-f75097ad9155e83b.js"
+    ],
+    "/dashboard/monitor": [
+      "static/chunks/webpack-38cee4c0e358b1a3.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-f374284f798862e4.js",
+      "static/chunks/796-ac33f54abf9a8daf.js",
+      "static/chunks/pages/dashboard/monitor-752b0ab01554809a.js"
+    ],
+    "/dashboard/predict": [
+      "static/chunks/webpack-38cee4c0e358b1a3.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-f374284f798862e4.js",
+      "static/chunks/67-e81e87c5710fd628.js",
+      "static/chunks/796-ac33f54abf9a8daf.js",
+      "static/chunks/pages/dashboard/predict-e303593b3ba1ee2e.js"
+    ],
+    "/dashboard/profile": [
+      "static/chunks/webpack-38cee4c0e358b1a3.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-f374284f798862e4.js",
+      "static/chunks/142-b0cd03353b1e338f.js",
+      "static/chunks/pages/dashboard/profile-b8f6ce0c7ab0011b.js"
+    ],
+    "/dashboard/simulate": [
+      "static/chunks/webpack-38cee4c0e358b1a3.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-f374284f798862e4.js",
+      "static/chunks/796-ac33f54abf9a8daf.js",
+      "static/chunks/pages/dashboard/simulate-ef4dd25f4d362fd1.js"
+    ],
+    "/dashboard/tasks": [
+      "static/chunks/webpack-38cee4c0e358b1a3.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-f374284f798862e4.js",
+      "static/chunks/67-e81e87c5710fd628.js",
+      "static/chunks/796-ac33f54abf9a8daf.js",
+      "static/chunks/pages/dashboard/tasks-728aed6fc3bf56c5.js"
+    ],
+    "/login": [
+      "static/chunks/webpack-38cee4c0e358b1a3.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-f374284f798862e4.js",
+      "static/chunks/pages/login-64f44b291b7a8866.js"
+    ],
+    "/signup": [
+      "static/chunks/webpack-38cee4c0e358b1a3.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-f374284f798862e4.js",
+      "static/chunks/pages/signup-96b7c8e8656c640e.js"
+    ]
+  },
+  "ampFirstPages": []
+}
